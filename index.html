@@ -8,45 +8,61 @@
 </head>
 <body>
     <header>
+            <!-- navigation bar -->
         <nav>
-            <div class="svg-placeholder"></div>
-            <div class="svg-logo"></div>
-        </nav>
+        <div class="svg-logo"></div>
+        
+            <ul class="navigation">
+                <li class="navigation-link"><a href="#">about</a></li>
+                <li class="navigation-link"><a href="#">reel</a></li>
+                <li class="navigation-link"><a href="#">resume</a></li>
+                <li class="navigation-link"><a href="#">news</a></li>
+                <li class="navigation-link"><a href="#">gallery</a></li>
+                <li class="navigation-link"><a href="#">contact</a></li>
+            </ul>
+            <ul class="social-media">
+                <li class="social-media-link"><a><img src="#" alt="facebook" id="facebook"></a></li>
+                <li class="social-media-link"><a><img src="#" alt="instagram" id="instagram"></a></li>
+                <li class="social-media-link"><a><img src="#" alt="youtube" id="youtube"></a></li>
+                <li class="social-media-link"><a><img src="#" alt="imdb" id="imdb"></a></li>
+            </ul>
+        </nav> 
+        <!-- background image with animated highlights -->
         <div class="bg-image">
-            <div class="social-media">
-                <img src="#" alt="facebook" id="facebook">
-                <img src="#" alt="instagram" id="instagram">
-                <img src="#" alt="youtube" id="youtube">
+
+            <div class="text-for-bg-image">
+                <h1>Amalia <spam>May</spam></h1>
+                <h4 class="profession">actress|writer</h4>
             </div>
-            <h1>Amalia May</h1>
-            <h4>actress|writer</h4>
+
+            <section class="animated-highlights">
+                <div class="reel">
+                    <div class="svg-placeholder"></div>
+                    <h5>watch reel</h5>
+                    <div class="video-placeholder"></div>
+                </div>
+                <div class="news">
+                    <h5>news placeholder</h5>
+                    <img src="#" alt="news-image" class="news-image">
+                </div>
+                <div class="update">
+                    <h5>update placeholder</h5>
+                    <img src="#" alt="update-image" class="update-image">
+                </div>
+            </section>
+
         </div>
-        <section>
-            <div class="reel">
-                <div class="svg-placeholder"></div>
-                <h5>watch reel</h5>
-                <div class="video-placeholder"></div>
-            </div>
-            <div class="news">
-                <h5>news placeholder</h5>
-                <img src="#" alt="news-image" class="news-image">
-            </div>
-            <div class="update">
-                <h5>update placeholder</h5>
-                <img src="#" alt="update-image" class="update-image">
-            </div>
-        </section>
     </header>
 
-        <section>
-            <h5>Bio Title</h5>
+            <!-- bio section -->
+        <section class="bio">
+            <h5 class=bio-title>Bio Title</h5>
             <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, nam quisquam ab officia error dolorum distinctio et eum porro mollitia?</p>
             <p class="bio-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsa molestias consectetur quis aliquid minima nesciunt accusantium a? Ipsum consectetur eligendi, alias possimus animi eos fugiat veniam temporibus repudiandae maxime voluptatum, rem enim. Modi dolorem dolor deserunt aspernatur laudantium, eum ullam enim quo magni. Consectetur, totam rerum perspiciatis eaque iusto inventore vel, officia dicta sit quos repellat quae tenetur sapiente voluptatum animi nihil voluptas omnis dolor, nesciunt saepe. Soluta dolore nobis distinctio explicabo voluptatibus sapiente, reiciendis libero! Dolore, voluptatem animi.</p>
         </section>
 
         <section>
             <h5>Projects</h5>
-            <div class="placeholder-for-canvas"></div>
             <div class="project1">
                 <h6>Project1 Title</h6>
                 <div class="placeholder-for-svg-animation"></div>
@@ -78,15 +94,20 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis quo voluptates voluptas tenetur ex aliquid quaerat porro quasi ratione vero?</p>
             </div>
         </section>
-
+         <!-- contact me -->
         <section>
             <h5>Get in touch</h5>
-            <form>
-                <label for="name" class="name"></label>
-                <input type="text" id="name">
-                <label for="email" class="name"></label>
-                <input type="email" id="name">
-            </form>
+            <form action="#">
+                <label for="name">name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <label for="comment">Comment/Question</label>
+                <textarea id="comment" name="comment" rows="4" cols="50">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos excepturi incidunt qui dolore dolorum tempora iste? Veritatis ipsam inventore nemo.
+                </textarea>
+                <input type="submit" value="Submit">
+              </form> 
         </section>
    
         <footer>
@@ -112,5 +133,8 @@
                </div> 
         </footer>
     
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.5/gsap.min.js"></script> 
+        <script src="js/main.js"></script>            
 </body>
 </html>

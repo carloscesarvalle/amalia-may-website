@@ -1,0 +1,121 @@
+/* general styles */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gotham', sans-serif;  
+}
+
+/* navigation bar */
+
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 5vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+}
+
+
+.svg-logo {
+    width: 2vw;
+    height: 2vh;
+    background-color: black;
+}
+
+.navigation, .social-media {
+    width: 10vw;
+    display: flex;    
+}
+
+.navigation-link {
+    padding: 0 2em;
+}
+
+li { 
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.social-media-link {
+    padding: 0 0.75em
+}
+
+/* background image with animated highlights*/
+
+.bg-image {
+    background: url("/images/Amalia-photo.jpg");
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+}
+
+.text-for-bg-image {
+    position: absolute;
+    top: 35vh;
+    left: 20vw;
+}
+
+h1{
+    font-size: 10rem;
+}
+
+.profession {
+    font-size: 4rem;
+}
+
+.animated-highlights {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+.reel, .news, .update {
+    width: 33.33vw;
+    height: 12.5vh;
+    background-color: gray;
+    border: black 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* animation: moveUp 2s forwards; */
+}
+
+/* @keyframes moveUp {
+        from {
+            opacity: 0;
+            transform: translateY(-15vh);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+} */
+
+.svg-placeholder, .video-placeholder, .news-image, .update-image {
+    width: 3vw;
+    height: 6vh;
+    background-color: thistle;
+}
+
+/* bio section styles */
+
+.bio {
+    height: 70vh;
+    background-color: wheat;
+}
+
+section .bio-title {
+    font-size: 10rem;
+}
