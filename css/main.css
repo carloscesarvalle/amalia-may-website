@@ -58,6 +58,7 @@ a {
     background: url("/images/Amalia-photo-for-website.jpg");
     background-size: cover;
     background-position: right;
+    background-color: thistle;
     width: 100vw;
     height: 100vh;
     position: relative;
