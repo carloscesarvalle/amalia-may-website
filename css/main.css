@@ -55,7 +55,7 @@ a {
 
 .bg-image {
     /* top: 6.5vh; */
-    background: url("/images/Amalia.jpg");
+    background-image: url("/images/Amalia.jpg");
     background-size: cover;
     background-position: right;
     background-color: thistle;
